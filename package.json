@@ -1,0 +1,34 @@
+{
+  "name": "seneca-hana-store",
+  "version": "0.0.1",
+  "description": "Seneca data store plugin for SAP HANA ODBC",
+  "main": "lib/hana-store.js",
+  "author": "Marian Radulescu",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marianr/seneca-hana-store.git"
+  },
+  "keywords": [
+    "seneca",
+    "plugin",
+    "store",
+    "sap",
+    "hana",
+    "odbc"
+  ],
+  "scripts": {
+  },
+  "dependencies": {
+    "seneca": "0.5.x",
+    "hana-odbc": "0.1.3",
+    "underscore": "1.4.x",
+    "async": "0.1.x",
+    "node-uuid": "1.4.x"
+  },
+  "devDependencies": {
+    "mocha": "1.9.x",
+    "chai": "1.5.x"
+  }
+}
