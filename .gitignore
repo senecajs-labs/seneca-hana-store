@@ -12,5 +12,7 @@ logs
 results
 node_modules/
 npm-debug.log
+mochahelper.js
+
 .idea/
 .settings/

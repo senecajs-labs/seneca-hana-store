@@ -13,5 +13,7 @@ results
 test/
 node_modules/
 npm-debug.log
+mochahelper.js
+
 .idea/
 .settings/
