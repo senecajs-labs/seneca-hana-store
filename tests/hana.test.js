@@ -12,7 +12,7 @@ var config = {
     username: 'SYSTEM',
     password: 'manager',
 //  db: 'SYSTEM',
-    schema: 'HELLO_ODATA',
+    schema: 'hana_test',
     options: { }
 }
 
