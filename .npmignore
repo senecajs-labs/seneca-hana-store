@@ -14,6 +14,7 @@ test/
 node_modules/
 npm-debug.log
 mochahelper.js
+scripts/
 
 .idea/
 .settings/
