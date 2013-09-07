@@ -7,17 +7,16 @@ var assert = require('assert'),
 
 var shared = seneca.test.store.shared
 
-var config = {
+
+var options = {
     dsn: 'hana',
     username: 'SYSTEM',
     password: 'manager',
-//  db: 'SYSTEM',
-    schema: 'hana_test',
-    options: { }
+    schema: 'hana_test'
 }
 
-var si = seneca({log:'print'})
-si.use(require('..'), config)
+var si = seneca()
+si.use(require('..'), options)
 
 si.__testcount = 0
 var testcount = 0
