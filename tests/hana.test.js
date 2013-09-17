@@ -16,7 +16,7 @@ var options = {
     idtype: 'sequence'
 }
 
-var si = seneca()
+var si = seneca({log:'print'})
 si.use(require('..'), options)
 
 si.__testcount = 0
@@ -28,6 +28,7 @@ describe('hana', function () {
     testcount++
     shared.basictest(si, done)
   })
+
 
   it('close', function (done) {
     shared.closetest(si, testcount, done)
