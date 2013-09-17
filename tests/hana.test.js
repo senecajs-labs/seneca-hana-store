@@ -12,7 +12,8 @@ var options = {
     dsn: 'hana',
     username: 'SYSTEM',
     password: 'manager',
-    schema: 'hana_test'
+    schema: 'hana_test',
+    idtype: 'sequence'
 }
 
 var si = seneca()
