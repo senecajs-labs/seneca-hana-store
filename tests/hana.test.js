@@ -29,9 +29,7 @@ var cleanup_cmds = [
 
 function prepdb(dbi, cmds, cb) {
   function cmdit(query, callback) {
-    console.log(query)
     dbi.query('\"' + options.schema + '\"', query, function (err, res) {
-      console.log(res)
       callback(err, res)
     })
   }
