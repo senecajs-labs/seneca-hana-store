@@ -1,6 +1,6 @@
 {
   "name": "seneca-hana-store",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Seneca data store plugin for SAP HANA ODBC",
   "main": "lib/hana-store.js",
   "author": "Marian Radulescu",
