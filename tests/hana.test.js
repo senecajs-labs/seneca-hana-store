@@ -9,11 +9,11 @@ var shared = seneca.test.store.shared;
 
 
 var options = {
-  dsn: 'hana',
-  username: 'SYSTEM',
-  password: 'manager',
-  schema: 'hana_test',
-  idtype: 'sequence'
+    host: 'imdbhdb',
+    port: 30015,
+    user: 'system',
+    password: 'manager',
+    schema: 'hana_test'
 };
 
 var si = seneca({log: 'print'});
@@ -29,7 +29,7 @@ var cleanup_cmds = [
 
 function prepdb(dbi, cmds, cb) {
   function cmdit(query, callback) {
-    dbi.query('\"' + options.schema + '\"', query, function (err, res) {
+    dbi.exec('\"' + options.schema + '\"', query, function (err, res) {
       callback(err, res);
     });
   }
@@ -40,14 +40,14 @@ function prepdb(dbi, cmds, cb) {
 
 describe('hana', function () {
 
-  before(function (done) {
-    si.ready(function () {
-      var ent = si.make$('sys');
-      ent.native$(function (err, dbi) {
-        prepdb(dbi, cleanup_cmds, done);
-      });
-    });
-  });
+//  before(function (done) {
+//    si.ready(function () {
+//      var ent = si.make$('sys');
+//      ent.native$(function (err, dbi) {
+//        prepdb(dbi, cleanup_cmds, done);
+//      });
+//    });
+//  });
 
 
   it('basic', function (done) {

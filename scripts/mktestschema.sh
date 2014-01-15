@@ -9,19 +9,13 @@ SCHEMA=hana_test
 function create_sql_file {
     echo "CREATE SCHEMA \"$SCHEMA\"" > $SQL_FILE
     echo "DROP TABLE \"$SCHEMA\".\"foo\" CASCADE" >> $SQL_FILE
-    echo "CREATE ROW TABLE \"$SCHEMA\".\"foo\"( \"id\" INTEGER not null, \"p1\" NVARCHAR (100) null, \"p2\" NVARCHAR (100) null, primary key (\"id\"))" >> $SQL_FILE
-    echo "DROP SEQUENCE \"$SCHEMA\".\"moon_bar_id\""  >> $SQL_FILE
-    echo "CREATE SEQUENCE \"$SCHEMA\".\"moon_bar_id\" START WITH 1"  >> $SQL_FILE
+    echo "CREATE ROW TABLE \"$SCHEMA\".\"foo\"( \"id\" NVARCHAR(36) not null, \"p1\" NVARCHAR (100) null, \"p2\" NVARCHAR (100) null, primary key (\"id\"))" >> $SQL_FILE
 
     echo "DROP TABLE \"$SCHEMA\".\"moon_bar\" CASCADE" >> $SQL_FILE
-    echo "CREATE ROW TABLE \"$SCHEMA\".\"moon_bar\" (\"id\" INTEGER, \"str\" NVARCHAR(100), \"int\" INTEGER, \"dec\" DOUBLE, \"bol\" NVARCHAR(5), \"wen\" NVARCHAR(100), \"arr\" NVARCHAR(1000), \"obj\" NVARCHAR(1000), \"mark\" NVARCHAR(100), \"seneca\" NVARCHAR(1000))" >> $SQL_FILE
-    echo "DROP SEQUENCE \"$SCHEMA\".\"foo_id\""  >> $SQL_FILE
-    echo "CREATE SEQUENCE \"$SCHEMA\".\"foo_id\" START WITH 1"  >> $SQL_FILE
+    echo "CREATE ROW TABLE \"$SCHEMA\".\"moon_bar\" (\"id\" NVARCHAR(36), \"str\" NVARCHAR(100), \"int\" INTEGER, \"dec\" DOUBLE, \"bol\" NVARCHAR(5), \"wen\" NVARCHAR(100), \"arr\" NVARCHAR(1000), \"obj\" NVARCHAR(1000), \"mark\" NVARCHAR(100), \"seneca\" NVARCHAR(1000))" >> $SQL_FILE
 
     echo "DROP TABLE \"$SCHEMA\".\"mapping_test\" CASCADE" >> $SQL_FILE
-    echo "CREATE ROW TABLE \"$SCHEMA\".\"mapping_test\" (\"id\" INTEGER, \"ctimestamp\" TIMESTAMP, \"cseconddate\" SECONDDATE, \"cdate\" DATE, \"ctime\" TIME, \"cdouble\" DOUBLE, \"creal\" REAL, \"cdecimal\" DECIMAL, \"csmalldecimal\" SMALLDECIMAL, \"cbigint\" BIGINT, \"cinteger\" INTEGER, \"csmallint\" SMALLINT, \"ctinyint\" TINYINT, \"cnclob\" NCLOB, \"cnvarchar\" NVARCHAR, \"cclob\" CLOB, \"cvarchar\" VARCHAR, \"cblob\" BLOB, \"cvarbinary\" VARBINARY, \"seneca\" NVARCHAROH(1000))" >> $SQL_FILE
-    echo "DROP SEQUENCE \"$SCHEMA\".\"mapping_test_id\""  >> $SQL_FILE
-    echo "CREATE SEQUENCE \"$SCHEMA\".\"mapping_test_id\" START WITH 1"  >> $SQL_FILE
+    echo "CREATE ROW TABLE \"$SCHEMA\".\"mapping_test\" (\"id\" NVARCHAR(36), \"ctimestamp\" TIMESTAMP, \"cseconddate\" SECONDDATE, \"cdate\" DATE, \"ctime\" TIME, \"cdouble\" DOUBLE, \"creal\" REAL, \"cdecimal\" DECIMAL, \"csmalldecimal\" SMALLDECIMAL, \"cbigint\" BIGINT, \"cinteger\" INTEGER, \"csmallint\" SMALLINT, \"ctinyint\" TINYINT, \"cnclob\" NCLOB, \"cnvarchar\" NVARCHAR, \"cclob\" CLOB, \"cvarchar\" VARCHAR, \"cblob\" BLOB, \"cvarbinary\" VARBINARY, \"seneca\" NVARCHAROH(1000))" >> $SQL_FILE
 
 }
 
