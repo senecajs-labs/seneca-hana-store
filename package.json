@@ -15,7 +15,7 @@
     "store",
     "sap",
     "hana",
-    "odbc"
+    "hdb"
   ],
   "scripts": {},
   "dependencies": {
