@@ -4,7 +4,6 @@
 # seneca-hana-store
 
 [![npm version][npm-badge]][npm-url]
-[![Build Status][travis-badge]][travis-url]
 [![Dependency Status][david-badge]][david-url]
 [![Gitter chat][gitter-badge]][gitter-url]
 
@@ -64,15 +63,13 @@ Copyright Marian Radulescu and other contributors 2016, Licensed under [MIT][].
 
 [MIT]: ./LICENSE
 [npm-badge]: https://badge.fury.io/js/seneca-hana-store.svg
-[npm-url]: https://badge.fury.io/js/seneca-hana-store.svg
-[david-badge]: https://david-dm.org/senecajs/seneca-hana-store.svg
-[david-url]: https://david-dm.org/senecajs/seneca-hana-store
+[npm-url]: https://badge.fury.io/js/seneca-hana-store
+[david-badge]: https://david-dm.org/senecajs-labs/seneca-hana-store.svg
+[david-url]: https://david-dm.org/senecajs-labs/seneca-hana-store
 [gitter-badge]: https://badges.gitter.im/senecajs/seneca.png
 [gitter-url]: https://gitter.im/senecajs/seneca
-[travis-badge]: https://travis-ci.org/senecajs/seneca-hana-store.svg
-[travis-url]: https://travis-ci.org/senecajs/seneca-hana-store
 
-[sapcom]: http://www54.sap.com/pc/tech/in-memory-computing-hana/software/overview/index.html
+[sapcom]: http://discover.sap.com/hana/en-us/index.html
 [seneca]: http://senecajs.org/
 [nodehdb]: https://github.com/SAP/node-hdb.git
 
