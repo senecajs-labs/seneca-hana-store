@@ -22,11 +22,11 @@
     "test": "lab tests/*.test.js -r console -v"
   },
   "dependencies": {
-    "seneca": "plugin",
     "hdb": "0.5.3",
     "lodash": "~4.x.x",
-    "node-uuid": "1.4.x",
-    "moment": "2.11.x"
+    "moment": "2.11.x",
+    "seneca": "plugin",
+    "uuid": "^3.0.0"
   },
   "devDependencies": {
     "async": "1.5.x",
@@ -45,4 +45,3 @@
     "test": "tests"
   }
 }
-
