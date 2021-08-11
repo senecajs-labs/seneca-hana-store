@@ -7,6 +7,9 @@
 [![Dependency Status][david-badge]][david-url]
 [![Gitter chat][gitter-badge]][gitter-url]
 
+| ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
+|---|---|
+
 seneca-hana-store is a [SAP HANA][sapcom] database plugin for the [Seneca][seneca] MVP toolkit. The plugin is using the
 [hdb][nodehdb] driver.
 
